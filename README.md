@@ -1,6 +1,9 @@
 # Simple Signal Processing Filters: SMA, BLP, etc.
 
 ## Requirements:
+pandas
+numpy 
+matplotlib
 
 ## Project Description:
 
