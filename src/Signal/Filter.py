@@ -31,6 +31,7 @@ def Check_Limit(value, limit, data_stack):
         # Return the modified value.
         return data_stack[-1] + offset if data_stack else offset
 
+# BLPMA
 class Butterworth_Low_Pass_Moving_Average(object):
     """
     Description:
@@ -101,7 +102,7 @@ class Butterworth_Low_Pass_Moving_Average(object):
         return scipy.signal.lfilter(*scipy.signal.butter(self.__order, self.__w_c_normalized, btype='lowpass', analog=False), 
                                     self.__data_stack)[-1]
 
-
+# BLP
 class Butterworth_Low_Pass(object):
     """
     Description:
@@ -171,6 +172,7 @@ class Butterworth_Low_Pass(object):
         return scipy.signal.lfilter(*scipy.signal.butter(self.__order, self.__w_c_normalized, btype='lowpass', analog=False), 
                                     self.__data_stack)[-1]
 
+# SMA
 class Simple_Moving_Average(object):
     """
     Description:
